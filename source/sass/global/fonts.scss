@@ -1,0 +1,58 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Rouble";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/rouble.woff2") format("woff2");
+
+
+/* Normal (Regular) 400 */
+/* Medium 500 */
+/* Semi Bold (Demi Bold) 600 */
+/* Bold 700 */
+/* Extra Bold (Ultra Bold) 800 */
+
+/* The Montserrat Font Project */
+/* https://github.com/JulietaUla/Montserrat */
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-medium.woff2") format("woff2"),
+    url("../fonts/montserrat-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-semibold.woff2") format("woff2"),
+    url("../fonts/montserrat-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-bold.woff2") format("woff2"),
+    url("../fonts/montserrat-bold.woff") format("woff");
+}

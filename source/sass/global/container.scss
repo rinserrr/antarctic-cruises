@@ -1,0 +1,27 @@
+// max-width — от указанного значения и ниже, включая значение.
+// min-width — от указанного значения и выше, включая значение.
+//
+// @mixin vp-1023 {
+//   @media (max-width: ($vp-1024 - 1px)) {
+//     @content;
+//   }
+
+.container {
+  // desktop
+  width: 100%;
+  // ширина содержимого по макету 1160
+  // отступы 40+40
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  // tablet
+  @include vp-1023 {
+    padding: 0 45px;
+  }
+
+  // mobile
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
