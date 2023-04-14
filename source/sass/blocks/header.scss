@@ -1,14 +1,19 @@
 .header {
+  min-width: 320px;
   padding-top: 35px;
   position: relative;
+
+  @include vp-1023 {
+    padding-top: 28px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
 }
 
 .header__wrapper {
   display: flex;
-
-  @include vp-767 {
-    flex-direction: column;
-  }
 }
 
 .header__logo-link {
@@ -16,6 +21,17 @@
   display: block;
   position: relative;
   z-index: 2;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
 }
 
 .header__logo {
@@ -24,6 +40,16 @@
   display: block;
   background-color: transparent;
   filter: brightness(0) saturate(100%) invert(97%) sepia(14%) saturate(1515%) hue-rotate(168deg) brightness(112%) contrast(97%);
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
 }
 
 .header__menu {
@@ -31,29 +57,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-
-  @include vp-767 {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
 
 .header__site-navigation {
-  max-width: 768;
   position: relative;
 
-  @include vp-1023 {
-    order: 0;
-  }
-
   @include vp-767 {
-    width: 100%;
+    width: calc(100% - 36px);
     order: 2;
     background-color: var(--color-alice-blue);
-    margin-left: 36px;
-    margin-top: -38px;
-    padding-top: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -65,29 +80,54 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  column-gap: 34px;
+  row-gap: 28px;
   list-style-type: none;
 
+  @include vp-1023 {
+    min-height: 20px;
+    column-gap: 24px;
+  }
+
   @include vp-767 {
+    padding-top: 75px;
     display: block;
   }
 }
 
 .site-navigation__link {
-  padding: 13px 11.5px;
+  padding: 9.5px 0;
+  min-height: 38px;
+
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-alice-blue);
+
+  @include vp-1023 {
+    padding: 0;
+    min-height: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-alice-blue);
+  }
 
   @include vp-767 {
+    margin-bottom: 10px;
+    padding-left: 25px;
     width: 100%;
-    min-height: 57px;
+    min-height: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-tangaroa);
   }
+
+  @include state-link;
+  @include state-link-line;
+  @include noselect;
 }

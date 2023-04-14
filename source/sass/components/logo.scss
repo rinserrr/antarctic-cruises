@@ -2,9 +2,10 @@
   flex-shrink: 0;
 
   img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
   }
 
   @include hover-focus {

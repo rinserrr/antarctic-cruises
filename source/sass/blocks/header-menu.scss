@@ -1,7 +1,8 @@
 .menu__toggle {
-  padding: 13px 13px;
-  width: 38px;
-  height: 38px;
+  padding: 4px 0;
+  width: 24px;
+  height: 22px;
+
   display: none;
   order: 1;
   align-items: center;
@@ -33,24 +34,27 @@
 .menu--no-js .header__site-navigation {
   @include vp-767 {
     display: block;
-    position: absolute;
-    top: 38px;
   }
 }
 
 .menu--closed .menu__toggle::before {
-  width: 16px;
-  height: 16px;
+  padding: 4px 0;
+  width: 24px;
+  height: 22px;
   position: absolute;
   content: "";
   background-image: url("../../img/control/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @include state-link;
+  @include noselect;
 }
 
 .menu--opened .menu__toggle::before {
-  width: 16px;
-  height: 16px;
+  padding: 4px 5px;
+  width: 24px;
+  height: 22px;
   position: absolute;
   content: "";
   background-image: url("../../img/control/icon-close.svg");
@@ -61,8 +65,8 @@
 .logo-opened {
   @include vp-767 {
     position: absolute;
-    top: -25px;
-    left: 40px;
+    top: -1;
+    left: 35px;
     z-index: 2;
     filter: brightness(0) saturate(100%) invert(11%) sepia(86%) saturate(930%) hue-rotate(186deg) brightness(94%) contrast(109%);
   }
@@ -71,8 +75,8 @@
 .logo-no-js {
   @include vp-767 {
     position: absolute;
-    top: -25px;
-    left: 40px;
+    top: -1;
+    left: 35px;
     z-index: 2;
     filter: brightness(0) saturate(100%) invert(11%) sepia(86%) saturate(930%) hue-rotate(186deg) brightness(94%) contrast(109%);
   }
