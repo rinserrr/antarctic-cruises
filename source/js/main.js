@@ -2,27 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
+import './modules/toggle';
 
-/* Toggle Menu */
-
-const menu = document.querySelector('.menu');
-const logo = document.querySelector('.header__logo');
-const toggle = document.querySelector('.menu__toggle');
-
-menu.classList.remove('menu--no-js');
-logo.classList.remove('logo-no-js');
-
-toggle.addEventListener('click', function () {
-  if (menu.classList.contains('menu--closed')) {
-    menu.classList.remove('menu--closed');
-    menu.classList.add('menu--opened');
-    logo.classList.add('logo-opened');
-  } else {
-    menu.classList.add('menu--closed');
-    menu.classList.remove('menu--opened');
-    logo.classList.remove('logo-opened');
-  }
-});
+import {lazScroll} from './modules/lazy';
 
 
 // ---------------------------------
@@ -36,6 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
+  window.addEventListener('scroll', lazScroll);
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
