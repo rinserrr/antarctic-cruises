@@ -1059,7 +1059,7 @@ button,
   height: 22px;
   position: absolute;
   content: "";
-  background-image: url("../../img/control/icon-burger.svg");
+  background-image: url("../img/control/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
   /* iOS Safari */
@@ -1125,7 +1125,7 @@ button,
   height: 22px;
   position: absolute;
   content: "";
-  background-image: url("../../img/control/icon-close.svg");
+  background-image: url("../img/control/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
