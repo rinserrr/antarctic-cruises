@@ -4,7 +4,6 @@
   @include vp-1023 {
     margin: 0 auto;
     padding: 0;
-
   }
 }
 
@@ -121,7 +120,7 @@
   }
 }
 
-[type="checkbox"]:checked+.form__checkbox-mark {
+[type="checkbox"]:checked + .form__checkbox-mark {
   &::after {
     content: "";
   }
@@ -226,6 +225,6 @@
   }
 }
 
-.form__personal-checkbox-wrapper label>* {
-  align-self: center
+.form__personal-checkbox-wrapper label > * {
+  align-self: center;
 }
