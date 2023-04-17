@@ -6,6 +6,9 @@ import './modules/toggle';
 
 import {lazScroll} from './modules/lazy';
 
+import {initMap} from './modules/yandex-map/yandex-map';
+import {PIN_IMAGE, PIN_INFO, DEFAULT_ZOOM, MAP_CENTER} from './modules/yandex-map/map-initials';
+
 
 // ---------------------------------
 
@@ -29,6 +32,29 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    setTimeout(() => {
+      initMap({
+        id: 'map',
+        initials: {
+          center: MAP_CENTER,
+          controls: [],
+          zoom: DEFAULT_ZOOM,
+        },
+        placemark: [
+          {
+            hintContent: PIN_INFO,
+          },
+          {
+            iconImageHref: PIN_IMAGE,
+            iconImageSize: [18, 22],
+            iconLayout: 'default#image',
+            iconShadow: false,
+            iconImageOffset: [-9, -22],
+          }
+        ],
+      });
+    }, 3000);
   });
 });
 
