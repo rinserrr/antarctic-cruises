@@ -1,0 +1,168 @@
+// .features {
+// }
+
+.features__wrapper {
+  padding: 110px 0 120px;
+  position: relative;
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 57px;
+    padding-bottom: 67px;
+  }
+}
+
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--color-tangaroa);
+
+  text-align: center;
+  cursor: default;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 29px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  list-style: none;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features__item {
+  padding: 30px 10px 45px 30px;
+  background-color: var(--color-alice-blue);
+
+  @include vp-1023 {
+    padding: 27px 8px 20px 20px;
+  }
+
+  @include vp-767 {
+    padding: 27px 22px 20px 20px;
+  }
+}
+
+.features__item h3 {
+  margin: 0;
+  padding: 10px 0 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-tangaroa);
+
+  cursor: default;
+
+  @include vp-1023 {
+    line-height: 25px;
+  }
+}
+
+.features__item p {
+  margin: 0;
+  padding: 0 30px 0 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: var(--color-tangaroa);
+
+  cursor: default;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+}
+
+.features__item.ship-fullface svg {
+  width: 27px;
+  height: 32px;
+
+  @include vp-1023 {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.features__item.check-mark {
+  @include vp-767 {
+    padding-bottom: 48px;
+  }
+}
+
+.features__item.check-mark svg {
+  width: 38px;
+  height: 32px;
+
+  @include vp-1023 {
+    width: 27px;
+    height: 26px;
+  }
+}
+
+.features__item.ship-profile svg {
+  width: 44px;
+  height: 32px;
+
+  @include vp-1023 {
+    width: 36px;
+    height: 26px;
+  }
+}
+
+.features__br {
+  display: block;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+// .ship {
+// }
+// .features__br-title {
+// }
+// .check-mark {
+// }
+// .boat {
+// }
+.features__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-pacific-blue);
+  z-index: -1;
+}
+// .bg-img {
+// }

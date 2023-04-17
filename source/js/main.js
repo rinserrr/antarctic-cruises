@@ -1,6 +1,14 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+// import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+
+import './modules/toggle';
+
+import {lazScroll} from './modules/lazy';
+
+import {initMap} from './modules/yandex-map/yandex-map';
+import {PIN_IMAGE, PIN_INFO, DEFAULT_ZOOM, MAP_CENTER} from './modules/yandex-map/map-initials';
+
 
 // ---------------------------------
 
@@ -14,13 +22,39 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  window.addEventListener('scroll', lazScroll);
+
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+    // initModals();
     const form = new Form();
     window.form = form;
     form.init();
+
+    setTimeout(() => {
+      initMap({
+        id: 'map',
+        initials: {
+          center: MAP_CENTER,
+          controls: [],
+          zoom: DEFAULT_ZOOM,
+        },
+        placemark: [
+          {
+            hintContent: PIN_INFO,
+          },
+          {
+            iconImageHref: PIN_IMAGE,
+            iconImageSize: [18, 22],
+            iconLayout: 'default#image',
+            iconShadow: false,
+            iconImageOffset: [-9, -22],
+          }
+        ],
+      });
+    }, 3000);
   });
 });
 

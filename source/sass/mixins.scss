@@ -116,3 +116,124 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+@mixin noselect {
+  /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Konqueror HTML */
+  -khtml-user-select: none;
+  /* Old versions of Firefox */
+  -moz-user-select: none;
+  /* Internet Explorer/Edge */
+  -ms-user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  user-select: none;
+}
+
+
+@mixin state-link {
+  &:focus,
+  &:focus-visible {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-pacific-blue);
+    text-shadow: 0 0 8px var(--color-pacific-blue);
+    background-color: transparent;
+
+    svg {
+      color: var(--color-pacific-blue);
+      filter: drop-shadow(0 0 2px var(--color-pacific-blue));
+    }
+  }
+
+  &:active {
+    color: var(--color-cerulean);
+    text-shadow: 0 0 8px var(--color-cerulean);
+
+    svg {
+      color: var(--color-cerulean);
+      filter: drop-shadow(0 0 2px var(--color-cerulean));
+    }
+  }
+
+  &:disabled {
+    color: var(--color-alice-blue);
+    background-color: var(--color-alice-blue);
+
+    svg {
+      color: var(--color-alice-blue);
+      filter: drop-shadow(0 0 5px var(--color-alice-blue));
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 6px #00b2ff, 0 0 6px #00b2ff, inset 0 0 1px #00b2ff, inset 0 0 2px #00b2ff, inset 0 0 6px #00b2ff, inset 0 0 6px #00b2ff;
+    outline-offset: -2px;
+    z-index: 50;
+  }
+}
+
+
+@mixin state-link-line {
+  &:focus,
+  &:focus-visible {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-pacific-blue);
+    text-shadow: 0 0 8px var(--color-pacific-blue);
+    background-color: transparent;
+
+    border-bottom: 1px solid var(--color-alice-blue);
+
+    svg {
+      color: var(--color-pacific-blue);
+      filter: drop-shadow(0 0 2px var(--color-pacific-blue));
+    }
+  }
+
+  &:active {
+    color: var(--color-cerulean);
+    text-shadow: 0 0 8px var(--color-cerulean);
+
+    svg {
+      color: var(--color-cerulean);
+      filter: drop-shadow(0 0 2px var(--color-cerulean));
+    }
+  }
+
+  &:disabled {
+    color: var(--color-alice-blue);
+    background-color: var(--color-alice-blue);
+
+    svg {
+      color: var(--color-alice-blue);
+      filter: drop-shadow(0 0 5px var(--color-alice-blue));
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 6px #00b2ff, 0 0 6px #00b2ff, inset 0 0 1px #00b2ff, inset 0 0 2px #00b2ff, inset 0 0 6px #00b2ff, inset 0 0 6px #00b2ff;
+    outline-offset: -2px;
+    z-index: 50;
+  }
+}
