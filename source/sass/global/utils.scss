@@ -84,3 +84,30 @@
   height: 100%;
   object-fit: cover;
 }
+// bg-image end
+
+
+// preLoader .... START
+
+@keyframes preloading-text {
+  0% {
+    content: "Loading";
+  }
+
+  20% {
+    content: "Loading .";
+  }
+
+  40% {
+    content: "Loading ..";
+  }
+
+  60% {
+    content: "Loading ...";
+  }
+
+  80% {
+    content: "Loading ....";
+  }
+}
+// preLoader .... END

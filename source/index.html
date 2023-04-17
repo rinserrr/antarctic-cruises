@@ -484,6 +484,75 @@
         </div>
       </section>
 
+      <section class="booking">
+        <div class="booking__bg bg-img">
+          <picture>
+            <source media="(max-width: 767px)" type="image/webp"
+              data-srcset="img/booking/bg-mobile.webp 1x, img/booking/bg-mobile@2x.webp 2x" srcset="#!">
+            <source media="(max-width: 1023px)" type="image/webp"
+              data-srcset="img/booking/bg-tablet.webp 1x, img/booking/bg-tablet@2x.webp 2x" srcset="#!">
+            <source type="image/webp" data-srcset="img/booking/bg-desktop.webp 1x, img/booking/bg-desktop@2x.webp 2x"
+              srcset="#!">
+
+            <source media="(max-width: 767px)" width="320" height="760"
+              data-srcset="img/booking/bg-mobile.jpg 1x, img/booking/bg-mobile@2x.jpg 2x" srcset="#!">
+            <source media="(max-width: 1023px)" width="768" height="805"
+              data-srcset="img/booking/bg-tablet.jpg 1x, img/booking/bg-tablet@2x.jpg 2x" srcset="#!">
+            <img width="1366" height="555" data-src="img/booking/bg-desktop.jpg"
+              data-srcset="img/booking/bg-desktop@2x.jpg 2x" alt="Горы и ледники" class="lazy" src="#!">
+          </picture>
+        </div>
+
+        <div class="container">
+          <div class="booking__wrapper">
+            <div class="booking__content">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев
+                до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+
+            <div class="booking__form form" data-form-validate>
+              <div class="form__wrapper">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+
+                  <div class="form__inputs-wrapper">
+                    <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+
+
+                    <label for="name" data-required data-validate-type="text" data-limitation="name"
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="text" name="name" id="name" placeholder="Имя" minlength="1" required>
+                    </label>
+
+                    <label for="phone" data-required data-on-input-validate data-validate-type="phone"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля">
+                      <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                    </label>
+
+                    <label for="email" data-required data-on-input-validate data-validate-type="email"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля">
+                      <input type="email" name="email" id="email" placeholder="Email" required>
+                    </label>
+
+                    <div class="form__personal-checkbox-wrapper">
+                      <label for="personal" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+                        <input type="checkbox" name="personal-data" id="personal" required checked>
+                        <span class="form__checkbox-mark"></span>
+                        <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                      </label>
+                    </div>
+
+                    <button class="button form__button" type="submit">Оставить заявку</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
       <br><br><br><br><br><br><br><br><br><br>

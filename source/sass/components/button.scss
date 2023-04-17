@@ -1,0 +1,23 @@
+.button {
+  padding: 0;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  // font-family: $ff-roboto;
+  // font-style: normal;
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 16px;
+  // letter-spacing: 0.05em;
+  // text-transform: uppercase;
+
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}

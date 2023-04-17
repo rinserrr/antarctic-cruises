@@ -192,9 +192,8 @@
   }
 }
 
-// preLoader .... START
-
 .catalog__image {
+  // preLoader .... START
   position: relative;
 
   &:after {
@@ -211,30 +210,8 @@
       iteration-count: infinite;
     }
   }
+  // preLoader .... END
 }
-
-@keyframes preloading-text {
-  0% {
-    content: "Loading";
-  }
-
-  20% {
-    content: "Loading .";
-  }
-
-  40% {
-    content: "Loading ..";
-  }
-
-  60% {
-    content: "Loading ...";
-  }
-
-  80% {
-    content: "Loading ....";
-  }
-}
-// preLoader .... END
 
 .catalog__item-wrapper {
   display: grid;
