@@ -1,9 +1,12 @@
-// .features {
-// }
+.features {
+  overflow-x: hidden;
+}
 
 .features__wrapper {
   padding: 110px 0 120px;
   position: relative;
+
+  overflow-x: hidden;
 
   @include vp-1023 {
     padding-top: 90px;

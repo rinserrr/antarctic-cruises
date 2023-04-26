@@ -1,6 +1,8 @@
 .travel {
   padding-bottom: 145px;
 
+  overflow-x: hidden;
+
   @include vp-1023 {
     padding-bottom: 82px;
   }
