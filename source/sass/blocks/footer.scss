@@ -4,6 +4,8 @@
   color: var(--color-alice-blue);
   background-color: var(--color-tangaroa);
 
+  overflow-x: hidden;
+
   @include vp-1023 {
     padding-top: 45px;
   }

@@ -18,6 +18,7 @@
   position: relative;
 
   @include vp-767 {
+    margin-bottom: 65px;
     padding: 36px 30px;
     width: 290px;
   }
@@ -33,7 +34,6 @@
   font-size: 18px;
   line-height: 27px;
   color: var(--color-alice-blue);
-  // transform: translateX(-5px);
 
   @include vp-1023 {
     transform: none;
@@ -138,8 +138,8 @@
     width: 10px;
     height: 6px;
     position: absolute;
-    top: 4px;
-    left: 3px;
+    top: 6px;
+    left: 5px;
     border: 2px solid rgba(1, 28, 64, 0.7);
     border-top: none;
     border-right: none;
@@ -156,6 +156,8 @@
 .form__button {
   padding: 11px;
   width: 100%;
+
+  transform: translateY(-4px);
 
   font-style: normal;
   font-weight: 600;
@@ -202,16 +204,28 @@
   line-height: 13px;
 
   @include vp-767 {
-    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    .form__checkbox-label {
+      padding-top: 2px;
+      width: 150px;
+    }
   }
 
   label {
     display: grid;
-    grid-template-columns: 15px 1fr;
+    grid-template-columns: 20px 1fr;
     column-gap: 8px;
 
     position: relative;
     top: 0;
+
+    @include vp-767 {
+      top: -4px;
+    }
 
     .is-invalid {
       grid-column: 1/-1;

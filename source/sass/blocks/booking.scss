@@ -3,6 +3,8 @@
   min-height: 555px;
   position: relative;
 
+  overflow-x: hidden;
+
   @include vp-1023 {
     min-height: 804px;
   }
