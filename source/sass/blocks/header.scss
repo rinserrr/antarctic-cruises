@@ -65,6 +65,7 @@
   position: relative;
 
   @include vp-767 {
+    padding-top: 75px;
     width: calc(100% - 36px);
     order: 2;
     background-color: var(--color-alice-blue);
@@ -92,8 +93,18 @@
   }
 
   @include vp-767 {
-    padding-top: 75px;
+    height: 100vh;
     display: block;
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--color-alice-blue);
+    z-index: 4;
+
+    .site-navigation__item:last-child {
+      margin-bottom: 100px;
+    }
   }
 }
 
