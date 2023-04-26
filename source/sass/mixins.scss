@@ -142,13 +142,13 @@
 
   &:hover,
   &:focus {
-    color: var(--color-pacific-blue);
-    text-shadow: 0 0 8px var(--color-pacific-blue);
+    color: var(--color-torch-red);
+    text-shadow: 0 0 8px var(--color-torch-red);
     background-color: transparent;
 
     svg {
-      color: var(--color-pacific-blue);
-      filter: drop-shadow(0 0 2px var(--color-pacific-blue));
+      color: var(--color-torch-red);
+      filter: drop-shadow(0 0 2px var(--color-torch-red));
     }
   }
 
@@ -178,7 +178,7 @@
   }
 
   &:focus-visible {
-    box-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 6px #00b2ff, 0 0 6px #00b2ff, inset 0 0 1px #00b2ff, inset 0 0 2px #00b2ff, inset 0 0 6px #00b2ff, inset 0 0 6px #00b2ff;
+    box-shadow: 0 0 1px #ff1553, 0 0 2px #ff1553, 0 0 6px #ff1553, 0 0 6px #ff1553, inset 0 0 1px #ff1553, inset 0 0 2px #ff1553, inset 0 0 6px #ff1553, inset 0 0 6px #ff1553;
     outline-offset: -2px;
     z-index: 50;
   }
@@ -194,15 +194,15 @@
 
   &:hover,
   &:focus {
-    color: var(--color-pacific-blue);
-    text-shadow: 0 0 8px var(--color-pacific-blue);
+    color: var(--color-torch-red);
+    text-shadow: 0 0 8px var(--color-torch-red);
     background-color: transparent;
 
     border-bottom: 1px solid var(--color-alice-blue);
 
     svg {
-      color: var(--color-pacific-blue);
-      filter: drop-shadow(0 0 2px var(--color-pacific-blue));
+      color: var(--color-torch-red);
+      filter: drop-shadow(0 0 2px var(--color-torch-red));
     }
   }
 
@@ -232,7 +232,7 @@
   }
 
   &:focus-visible {
-    box-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 6px #00b2ff, 0 0 6px #00b2ff, inset 0 0 1px #00b2ff, inset 0 0 2px #00b2ff, inset 0 0 6px #00b2ff, inset 0 0 6px #00b2ff;
+    box-shadow: 0 0 1px #ff1553, 0 0 2px #ff1553, 0 0 6px #ff1553, 0 0 6px #ff1553, inset 0 0 1px #ff1553, inset 0 0 2px #ff1553, inset 0 0 6px #ff1553, inset 0 0 6px #ff1553;
     outline-offset: -2px;
     z-index: 50;
   }
